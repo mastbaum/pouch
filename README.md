@@ -1,17 +1,21 @@
-#POUCH - Penn cOUCHdb interface
-###A pure C wrapper for working with CouchDB.
+POUCH - Penn cOUCHdb interface
+==============================
+A pure C wrapper for working with CouchDB.
 
-##Depends
-libcurl: link to at compile time with -lcurl
+pouch provides a simple way to interact with CouchDB instances through low-level CURL requests and the JSON library of your choice. 
 
-##Usage
-	gcc -o $program $program.c pouch.c -lcurl
+Dependencies
+------------
+* libcurl
 
-to compile the example program, demo.c, which
-uses an extension of Joseph Adams' [JSON library](http://git.ozlabs.org/?p=ccan;a=tree;f=ccan/json):
+Usage
+-----
+
+    gcc -o $program $program.c pouch.c -lcurl
+
+Examples
+--------
+To compile the example program, demo.c, which uses an extension of Joseph Adams [JSON library](http://git.ozlabs.org/?p=ccan;a=tree;f=ccan/json):
 
 	make
 
-##Description
-A simple way to interact with CouchDB instances through low-level
-CURL requests and the JSON library of your choice. 
